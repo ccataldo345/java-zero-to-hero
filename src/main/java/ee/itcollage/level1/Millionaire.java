@@ -1,5 +1,7 @@
 package ee.itcollage.level1;
 
+import java.util.ArrayList;
+
 public class Millionaire {
 
     public static void main(String[] args) {
@@ -9,5 +11,17 @@ public class Millionaire {
         // add a list of cars to Garage
         // add another Ferrari to Garage
         // make Garage print out a list of cars in it
+
+        Garage garage = new Garage();
+        Ferrari ferrari1 = new Ferrari("F50");
+        garage.setFerrari(ferrari1);
+        System.out.println(ferrari1);
+
+        ArrayList<Ferrari> cars = new ArrayList<>();
+        cars.add(new Ferrari("F50"));
+        cars.add(new Ferrari("F40"));
+        garage.setCars(cars);
+        System.out.println(garage);
+
     }
 }
