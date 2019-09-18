@@ -1,7 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="ee.itcollage.level5.SquaresTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2019-09-18T11:25:44" hostname="hp" time="0.006">
-  <properties/>
-  <testcase name="squareTest" classname="ee.itcollage.level5.SquaresTest" time="0.006"/>
-  <system-out><![CDATA[]]></system-out>
-  <system-err><![CDATA[]]></system-err>
-</testsuite>
