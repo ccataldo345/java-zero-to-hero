@@ -1,16 +1,19 @@
 package ee.itcollage.level5;
 
+import org.apache.commons.collections4.CollectionUtils;
+
 import java.util.List;
+
+import static org.apache.commons.collections4.CollectionUtils.*;
 
 public class SumOfNumbers {
 
     //todo make tests work
     public static Integer sum(List<Integer> integerList) {
-        if (integerList == null || integerList.isEmpty()) {
-            //todo add gradle dependency for apache collectionutils and rewrite this condition with isNotEmpty
+        if (isEmpty(integerList)) {
             return null;
         }
-        return integerList.get(0);
+        return integerList.stream().mapToInt(Integer::intValue).sum();
     }
 
 }
