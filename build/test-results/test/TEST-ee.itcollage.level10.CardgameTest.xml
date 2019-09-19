@@ -1,7 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="ee.itcollage.level10.CardgameTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2019-09-18T14:06:09" hostname="hp" time="0.028">
-  <properties/>
-  <testcase name="cards_contain_ace_of_spades" classname="ee.itcollage.level10.CardgameTest" time="0.028"/>
-  <system-out><![CDATA[]]></system-out>
-  <system-err><![CDATA[]]></system-err>
-</testsuite>
