@@ -2,12 +2,13 @@ package ee.itcollage.level11;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.stream.Collectors;
 
 public class WordFilter {
 
     //todo fix tests
 
-    public List<Word> getNouns(List<Word> words) {
+    /*public List<Word> getNouns(List<Word> words) {
         List<Word> nouns = new ArrayList<>();
         for (Word word : words) {
             //if (word.getWordType().equals(Word.WordType.NOUN)) {
@@ -16,9 +17,15 @@ public class WordFilter {
             }
         }
         return nouns;
+    }*/
+
+    public List<Word> getNouns(List<Word> words) {
+        return words.stream()
+                .filter(word -> word.getWordType().isNoun())
+                .collect(Collectors.toList());
     }
 
-    public Word getFirstVerb(List<Word> words) {
+    /*public Word getFirstVerb(List<Word> words) {
         List<Word> firstVerb = new ArrayList<>();
         for (Word word : words) {
             // if (word.getWordType().equals(Word.WordType.VERB)) {
@@ -28,6 +35,12 @@ public class WordFilter {
             }
         }
         return null;
+    }*/
+
+    public Word getFirstVerb(List<Word> words) {
+        return words.stream()
+                .filter(word -> word.getWordType().isVerb())
+                .findFirst().orElse(null);
     }
 
     public Word getFirstOfType(List<Word> words, Word.WordType type) {
